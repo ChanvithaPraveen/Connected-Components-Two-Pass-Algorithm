@@ -78,7 +78,7 @@ def assign_label(neighbor_pixels):
 
 def main():
     # Load the image using OpenCV. Replace "your_image.jpg" with the path to your image.
-    image = cv2.imread("input_images/shapes_orig.png", cv2.IMREAD_GRAYSCALE)
+    image = cv2.imread("input_images/Sample Image 1.bmp", cv2.IMREAD_GRAYSCALE)
 
     # Add borders to the image
     # image = cv2.copyMakeBorder(image, 1, 1, 1, 1, cv2.BORDER_CONSTANT, value=255)
