@@ -30,7 +30,7 @@ def colorize_labeled_regions(labeled_image):
     return colored_image
 
 
-# Assign labels to connected components using a two-pass algorithm
+# Assign labels to connected components using the two-pass algorithm
 def two_pass_labeling(binary_image):
     rows, columns = binary_image.shape
 
