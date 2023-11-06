@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Read the binary image
-binary_image = cv2.imread('d.JPG', cv2.IMREAD_GRAYSCALE)
+binary_image = cv2.imread('input_images/d.JPG', cv2.IMREAD_GRAYSCALE)
 
 def two_pass_labeling(image):
     height, width = image.shape
@@ -60,7 +60,7 @@ for label in range(1, num_labels):
     colored_image[labels == label] = color_map[label]
 
 # Save the colored image
-cv2.imwrite('colored_image.png', colored_image)
+cv2.imwrite('output_images/colored_image.jpg', colored_image)
 
 # Display the colored image
 cv2.imshow('Colored Image', colored_image)
